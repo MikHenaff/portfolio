@@ -2,8 +2,14 @@ import { projectsDB } from "../data/projectsDB";
 import { FaTimes } from "react-icons/fa";
 import parse from "html-react-parser";
 
+import TraineeProjectHomepage from "../assets/img/projects/projet-formation-homepage.png";
+import TraineeProjectContent from "../assets/img/projects/projet-formation-collection.png";
 import CocktailTimeHomepage from "../assets/img/projects/cocktail-time-homepage.png";
 import CocktailTimeContent from "../assets/img/projects/cocktail-time-content.png";
+import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
+import KaamelottContent2 from "../assets/img/projects/kaamelott-content2.png";
+import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
+import PortfolioAbout from "../assets/img/projects/portfolio-about.png";
 
 const ProjectDetails = ({ handleProject, text }) => {
   return (
@@ -32,15 +38,35 @@ const ProjectDetails = ({ handleProject, text }) => {
               <div className="flex flex-col lg:flex-row p-2 mb-2 shadow-md">
                 <img
                   //src={project.img1src}
-                  src={CocktailTimeHomepage}
-                  alt="truc"
+                  src={
+                    project.name === "Traineee Project"
+                      ? `${TraineeProjectHomepage}`
+                      : project.name === "Cocktail Time"
+                      ? `${CocktailTimeHomepage}`
+                      : project.name === "Kaamelott"
+                      ? `${KaamelottContent}`
+                      : project.name === "Portfolio"
+                      ? `${PortfolioHomepage}`
+                      : ""
+                  }
+                  alt={`${project.name} app homepage`}
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 md:pr-2"
                 />
                 {project.img2src && (
                   <img
                     //src={projet.img2src}
-                    src={CocktailTimeContent}
-                    alt="machin"
+                    src={
+                      project.name === "Traineee Project"
+                        ? `${TraineeProjectContent}`
+                        : project.name === "Cocktail Time"
+                        ? `${CocktailTimeContent}`
+                        : project.name === "Kaamelott"
+                        ? `${KaamelottContent2}`
+                        : project.name === "Portfolio"
+                        ? `${PortfolioAbout}`
+                        : ""
+                    }
+                    alt={`${project.name} app content`}
                     className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2"
                   />
                 )}
