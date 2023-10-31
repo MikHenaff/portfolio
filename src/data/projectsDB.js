@@ -1,8 +1,8 @@
 //import TraineeProjectHomepage from "../assets/img/projects/projet-formation-homepage.png";
 import TraineeProjectHomepage from "./assets/img/projects/projet-formation-homepage.png";
 import TraineeProjectContent from "../src/assets/img/projects/projet-formation-collection.png";
-//import CocktailTimeHomepage from "../assets/img/projects/cocktail-time-homepage.png";
-//import CocktailTimeContent from "../assets/img/projects/cocktail-time-content.png";
+import CocktailTimeHomepage from "./src/assets/img/projects/cocktail-time-homepage.png";
+import CocktailTimeContent from "/assets/img/projects/cocktail-time-content.png";
 //import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
 //import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
 
@@ -21,8 +21,8 @@ export const projectsDB = [
   },
   {
     name: "Cocktail Time",
-    img1src: "../src/assets/img/projects/cocktail-time-homepage.png",
-    img2src: "../src/assets/img/projects/cocktail-time-content.png",
+    img1src: { CocktailTimeHomepage },
+    img2src: { CocktailTimeContent },
     technos: ["- HTML/CSS", "- JavaScript"],
     desc: 'An application based on "TheCocktailDB" API <a href="https://www.thecocktaildb.com" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(thecocktaildb.com)</a>.<br/>The user can search for cocktail recipes by name or ingredient and retrieve a random recipe.',
     demoLink: "https://mikhenaff.github.io/cocktail-app",
