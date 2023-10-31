@@ -28,7 +28,11 @@ const ProjectDetails = ({ handleProject, text }) => {
               </h2>
               <div className="flex flex-col lg:flex-row p-2 mb-2 shadow-md">
                 <img
-                  src={project.img1src}
+                  //src={img1src}
+                  src={
+                    project.name === "Trainee Project" &&
+                    "../assets/img/projects/projet-formation-homepage.png"
+                  }
                   alt="truc"
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 md:pr-2"
                 />
