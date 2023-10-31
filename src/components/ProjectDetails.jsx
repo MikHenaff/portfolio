@@ -2,6 +2,9 @@ import { projectsDB } from "../data/projectsDB";
 import { FaTimes } from "react-icons/fa";
 import parse from "html-react-parser";
 
+import CocktailTimeHomepage from "../assets/img/projects/cocktail-time-homepage.png";
+import CocktailTimeContent from "../assets/img/projects/cocktail-time-content.png";
+
 const ProjectDetails = ({ handleProject, text }) => {
   return (
     <div className="w-full min-h-screen flex items-center bg-[#094a4a] py-5">
@@ -28,14 +31,15 @@ const ProjectDetails = ({ handleProject, text }) => {
               </h2>
               <div className="flex flex-col lg:flex-row p-2 mb-2 shadow-md">
                 <img
-                  //src={img1src}
-                  src="/projet-formation-homepage.png"
+                  //src={project.img1src}
+                  src={CocktailTimeHomepage}
                   alt="truc"
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 md:pr-2"
                 />
                 {project.img2src && (
                   <img
-                    src={project.img2src}
+                    //src={projet.img2src}
+                    src={CocktailTimeContent}
                     alt="machin"
                     className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2"
                   />
