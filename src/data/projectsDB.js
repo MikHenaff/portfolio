@@ -1,6 +1,6 @@
 //import TraineeProjectHomepage from "../assets/img/projects/projet-formation-homepage.png";
 import TraineeProjectHomepage from "./assets/img/projects/projet-formation-homepage.png";
-import TraineeProjectContent from "../assets/img/projects/projet-formation-collection.png";
+import TraineeProjectContent from "../src/assets/img/projects/projet-formation-collection.png";
 //import CocktailTimeHomepage from "../assets/img/projects/cocktail-time-homepage.png";
 //import CocktailTimeContent from "../assets/img/projects/cocktail-time-content.png";
 //import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
