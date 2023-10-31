@@ -39,11 +39,11 @@ const ProjectDetails = ({ handleProject, text }) => {
                 <img
                   //src={project.img1src}
                   src={
-                    project.name === "Traineee Project"
+                    project.name === "Trainee Project"
                       ? { TraineeProjectHomepage }
                       : project.name === "Cocktail Time"
                       ? { CocktailTimeHomepage }
-                      : project.name === "Kaamelott"
+                      : project.name === "Kaamelott Quotations"
                       ? { KaamelottContent }
                       : project.name === "Portfolio"
                       ? { PortfolioHomepage }
@@ -52,24 +52,24 @@ const ProjectDetails = ({ handleProject, text }) => {
                   alt={`${project.name} app homepage`}
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 md:pr-2"
                 />
-                {project.img2src && (
-                  <img
-                    //src={projet.img2src}
-                    src={
-                      project.name === "Traineee Project"
-                        ? { TraineeProjectContent }
-                        : project.name === "Cocktail Time"
-                        ? { CocktailTimeContent }
-                        : project.name === "Kaamelott"
-                        ? { KaamelottContent2 }
-                        : project.name === "Portfolio"
-                        ? { PortfolioAbout }
-                        : ""
-                    }
-                    alt={`${project.name} app content`}
-                    className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2"
-                  />
-                )}
+                {/*{project.img2src && (*/}
+                <img
+                  //src={projet.img2src}
+                  src={
+                    project.name === "Trainee Project"
+                      ? { TraineeProjectContent }
+                      : project.name === "Cocktail Time"
+                      ? { CocktailTimeContent }
+                      : project.name === "Kaamelott Quotations"
+                      ? { KaamelottContent2 }
+                      : project.name === "Portfolio"
+                      ? { PortfolioAbout }
+                      : ""
+                  }
+                  alt={`${project.name} app content`}
+                  className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2"
+                />
+                {/*)}*/}
               </div>
               <div className="flex flex-col justify-center items-center mb-5">
                 <div className="pb-2">
