@@ -40,13 +40,13 @@ const ProjectDetails = ({ handleProject, text }) => {
                   //src={project.img1src}
                   src={
                     project.name === "Traineee Project"
-                      ? `${TraineeProjectHomepage}`
+                      ? { TraineeProjectHomepage }
                       : project.name === "Cocktail Time"
-                      ? `${CocktailTimeHomepage}`
+                      ? { CocktailTimeHomepage }
                       : project.name === "Kaamelott"
-                      ? `${KaamelottContent}`
+                      ? { KaamelottContent }
                       : project.name === "Portfolio"
-                      ? `${PortfolioHomepage}`
+                      ? { PortfolioHomepage }
                       : ""
                   }
                   alt={`${project.name} app homepage`}
@@ -57,13 +57,13 @@ const ProjectDetails = ({ handleProject, text }) => {
                     //src={projet.img2src}
                     src={
                       project.name === "Traineee Project"
-                        ? `${TraineeProjectContent}`
+                        ? { TraineeProjectContent }
                         : project.name === "Cocktail Time"
-                        ? `${CocktailTimeContent}`
+                        ? { CocktailTimeContent }
                         : project.name === "Kaamelott"
-                        ? `${KaamelottContent2}`
+                        ? { KaamelottContent2 }
                         : project.name === "Portfolio"
-                        ? `${PortfolioAbout}`
+                        ? { PortfolioAbout }
                         : ""
                     }
                     alt={`${project.name} app content`}
