@@ -30,8 +30,9 @@ const ProjectDetails = ({ handleProject, text }) => {
                 <img
                   //src={img1src}
                   src={
-                    project.name === "Trainee Project" &&
-                    "../assets/img/projects/projet-formation-homepage.png"
+                    project.name === "Trainee Project"
+                      ? "../assets/img/projects/projet-formation-homepage.png"
+                      : ""
                   }
                   alt="truc"
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 md:pr-2"
