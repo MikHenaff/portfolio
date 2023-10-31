@@ -24,7 +24,7 @@ export const projectsDB = [
   },
   {
     name: "Cocktail Time",
-    img1src: "../src/assets/img/projects/cocktail-time-homepage.png",
+    img1src: "../porfolio/src/assets/img/projects/cocktail-time-homepage.png",
     img2src: "../src/assets/img/projects/cocktail-time-content.png",
     technos: ["- HTML/CSS", "- JavaScript"],
     desc: 'An application based on "TheCocktailDB" API <a href="https://www.thecocktaildb.com" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(thecocktaildb.com)</a>.<br/>The user can search for cocktail recipes by name or ingredient and retrieve a random recipe.',
