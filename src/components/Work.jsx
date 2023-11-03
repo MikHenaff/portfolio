@@ -3,6 +3,7 @@ import TraineeProjectHomepage from "../assets/img/projects/projet-formation-home
 import CocktailTimeHomepage from "../assets/img/projects/cocktail-time-homepage.png";
 import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
 import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
+import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png";
 
 const Work = ({ burger, handleProject, handleText }) => {
   return (
@@ -13,7 +14,7 @@ const Work = ({ burger, handleProject, handleText }) => {
     >
       <div className="flex flex-col items-center text-lg md:text-2xl text-[#b8bcbd]">
         <h2
-          className="self-center md:self-end text-[#18c9c9] text-3xl sm:text-5xl pb-10 sm:pb-20 underline underline-offset-4"
+          className="self-center md:self-end md:mr-[6%] text-[#18c9c9] text-3xl sm:text-5xl -mt-40 sm:-mt-5 md:-mt-20 pb-20 underline underline-offset-4"
           style={{ textShadow: "1px 1px 1px #f2f2f2" }}
         >
           My work
@@ -22,12 +23,12 @@ const Work = ({ burger, handleProject, handleText }) => {
           className={
             burger
               ? "hidden"
-              : "grid sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-5"
+              : "grid grid-cols-2 lg:grid-cols-3 w-[90%] place-items-center gap-2 lg:gap-5"
           }
         >
           <ProjectCard
-            imgSrc={TraineeProjectHomepage}
-            text="Trainee Project"
+            imgSrc={WeatherAppHomepage}
+            text="Weather App"
             handleProject={handleProject}
             handleText={handleText}
           />
@@ -39,7 +40,13 @@ const Work = ({ burger, handleProject, handleText }) => {
           />
           <ProjectCard
             imgSrc={KaamelottContent}
-            text="Kaamelott Quotations"
+            text="Kaamelott Quotes"
+            handleProject={handleProject}
+            handleText={handleText}
+          />
+          <ProjectCard
+            imgSrc={TraineeProjectHomepage}
+            text="Trainee Project"
             handleProject={handleProject}
             handleText={handleText}
           />

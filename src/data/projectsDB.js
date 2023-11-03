@@ -4,6 +4,8 @@
 //import CocktailTimeContent from "../assets/img/projects/cocktail-time-content.png";
 //import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
 //import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
+//import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png";
+//import WeatherAppContent from "../assets/img/projects/weather-app-content.png";
 
 export const projectsDB = [
   {
@@ -24,7 +26,7 @@ export const projectsDB = [
     codeLink: "https://github.com/mikhenaff/cocktail-app",
   },
   {
-    name: "Kaamelott Quotations",
+    name: "Kaamelott Quotes",
     //img1src: {KaamelottContent},
     technos: ["- React", "- TypeScript", "- Tailwind CSS"],
     desc: 'My first React application. Very simple, based on "Kaamelott" API <a href="https://kaamelott.chaudie.re" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(kaamelott.chaudie.re)</a>.<br/>The app allows the user to display a random character quote from the TV series Kaamelott, specifying the season and episode name from which it originates.',
@@ -37,5 +39,14 @@ export const projectsDB = [
     technos: ["- React", "- Tailwind CSS"],
     desc: '<span class="centered-text">This is the portfolio you are on right now !</span>',
     codeLink: "https://github.com/mikhenaff/portfolio",
+  },
+  {
+    name: "Weather App",
+    //img1src: {WeatherAppHomepage},
+    //img2src: {WeatherAppContent},
+    technos: ["- React", "- Tailwind CSS"],
+    desc: 'A React wheather application based on "OpenWeatherMap" APIs <a href="https://openweathermap.org" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(openweathermap.org)</a>.<br/>The app allows the user to search for a city and display the local date and time, the temperature, the weather description, the local sunrise and sunset times, the wind and the humidity. The backgroung image changes according to the weather and the time (day or night).',
+    demoLink: "https://mikhenaff.github.io/weather-app-react",
+    codeLink: "https://github.com/mikhenaff/weather-app-react",
   },
 ];

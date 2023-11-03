@@ -10,6 +10,8 @@ import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
 import KaamelottContent2 from "../assets/img/projects/kaamelott-content2.png";
 import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
 import PortfolioAbout from "../assets/img/projects/portfolio-about.png";
+import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png";
+import WeatherAppContent from "../assets/img/projects/weather-app-content.png";
 
 const ProjectDetails = ({ handleProject, text }) => {
   return (
@@ -43,14 +45,16 @@ const ProjectDetails = ({ handleProject, text }) => {
                       ? TraineeProjectHomepage
                       : project.name === "Cocktail Time"
                       ? CocktailTimeHomepage
-                      : project.name === "Kaamelott Quotations"
+                      : project.name === "Kaamelott Quotes"
                       ? KaamelottContent
                       : project.name === "Portfolio"
                       ? PortfolioHomepage
+                      : project.name === "Weather App"
+                      ? WeatherAppHomepage
                       : ""
                   }
                   alt={`${project.name} app homepage`}
-                  className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 md:pr-2"
+                  className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 lg:mr-2"
                 />
                 {/*{project.img2src && (*/}
                 <img
@@ -60,10 +64,12 @@ const ProjectDetails = ({ handleProject, text }) => {
                       ? TraineeProjectContent
                       : project.name === "Cocktail Time"
                       ? CocktailTimeContent
-                      : project.name === "Kaamelott Quotations"
+                      : project.name === "Kaamelott Quotes"
                       ? KaamelottContent2
                       : project.name === "Portfolio"
                       ? PortfolioAbout
+                      : project.name === "Weather App"
+                      ? WeatherAppContent
                       : ""
                   }
                   alt={`${project.name} app content`}
@@ -79,7 +85,7 @@ const ProjectDetails = ({ handleProject, text }) => {
                   >
                     Description
                   </h3>
-                  <p className="px-[5%] sm:px-[10%] sm:w-[450px] 2xl:w-[700px]">
+                  <p className="px-[5%] sm:w-[450px] lg:w-[700px]">
                     {parse(project.desc)}
                   </p>
                 </div>

@@ -10,7 +10,7 @@ const About = () => {
     >
       <div className="flex flex-col justify-center px-[10%] lg:pl-[30%] lg:pr-[10%] text-lg md:text-2xl text-[#b8bcbd]">
         <h2
-          className="self-center md:self-end text-[#18c9c9] text-3xl sm:text-5xl pb-10 sm:pb-20 underline underline-offset-4"
+          className="self-center md:self-end text-[#18c9c9] text-3xl sm:text-5xl pb-20 underline underline-offset-4"
           style={{
             textShadow: "1px 1px 1px #f2f2f2",
           }}
