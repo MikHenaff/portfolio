@@ -46,7 +46,8 @@ export const projectsDB = [
     //img2src: {WeatherAppContent},
     technos: ["- React", "- Tailwind CSS"],
     desc: 'A React wheather application designed as a mobile app and based on "OpenWeatherMap" APIs <a href="https://openweathermap.org" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(openweathermap.org)</a>.<br/>The app allows the user to search for a city and display the local date and time, the temperature, the weather description, the local sunrise and sunset times, the wind and the humidity. The backgroung image changes according to the weather and the time (day or night).',
-    demoLink: "https://mikhenaff.github.io/weather-app-react",
+    demoLink:
+      "https://weather-app-react-bl5eyz9sz-miks-projects-6c2376ea.vercel.app",
     codeLink: "https://github.com/mikhenaff/weather-app-react",
   },
 ];
