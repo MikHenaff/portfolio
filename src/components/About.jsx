@@ -25,9 +25,9 @@ const About = () => {
         </p>
         <p className="pb-10">
           Today, I dedicate all my energy to{" "}
-          <strong className="highlighted-text">web development</strong>,
-          primarily on the{" "}
-          <strong className="highlighted-text">frontend</strong>.
+          <strong className="highlighted-text">web development</strong>, mainly
+          in the <strong className="highlighted-text">frontend</strong> but not
+          only...
         </p>
         <p className="pb-10">
           Enthusiastic about{" "}
