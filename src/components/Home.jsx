@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#094a4a]">
-      <div className="flex flex-col h-full justify-center px-[10%] text-lg md:text-2xl">
+      <div className="flex flex-col h-full justify-center px-[10%] text-sm sm:text-lg md:text-2xl">
         <p className="text-xl sm:text-2xl text-[#18c9c9] font-bold">
           Hi! My name is
         </p>

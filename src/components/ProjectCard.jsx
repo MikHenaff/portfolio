@@ -7,7 +7,7 @@ const ProjectCard = ({ imgSrc, text, handleProject, handleText }) => {
             handleProject();
             handleText(text);
           }}
-          className="text-[#041f1f] underline underline-offset-8 bg-[#18c9c9]/90 w-full h-full border-2 px-3 py-2 rounded-sm"
+          className="text-sm sm:text-base text-[#041f1f] underline underline-offset-8 bg-[#18c9c9]/90 w-full h-full border-2 px-3 py-2 rounded-sm"
         >
           Click to see more
         </button>
@@ -18,7 +18,7 @@ const ProjectCard = ({ imgSrc, text, handleProject, handleText }) => {
         className="w-[200px] sm:w-[300px] xl:w-[350px] 2xl:w-[400px] h-auto max-h-[152px] xl:max-h-[200px] rounded-t-sm"
       />
       <p
-        className="w-full text-center py-3 text-[#f2f2f2] bg-[#0e7474] rounded-b-sm"
+        className="w-full text-center text-sm sm:text-base py-3 text-[#f2f2f2] bg-[#0e7474] rounded-b-sm"
         style={{ textShadow: "1px 1px 1px #18c9c9" }}
       >
         {text}

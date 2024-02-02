@@ -14,7 +14,7 @@ const Work = ({ burger, handleProject, handleText }) => {
     >
       <div className="flex flex-col items-center text-lg md:text-2xl text-[#b8bcbd]">
         <h2
-          className="self-center md:self-end md:mr-[6%] text-[#18c9c9] text-3xl sm:text-5xl -mt-40 sm:-mt-5 md:-mt-20 pb-20 underline underline-offset-4"
+          className="self-center md:self-end md:mr-[6%] text-[#18c9c9] text-3xl sm:text-5xl -mt-20 sm:-mt-5 md:-mt-20 pb-10 sm:pb-20 underline underline-offset-4"
           style={{ textShadow: "1px 1px 1px #f2f2f2" }}
         >
           My work

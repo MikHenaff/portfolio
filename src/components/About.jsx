@@ -1,4 +1,5 @@
 import Resume from "../assets/resume/resume.pdf";
+import CV from "../assets/resume/cv.pdf";
 import Github from "../assets/img/networks/github.png";
 import Linkedin from "../assets/img/networks/linkedin.png";
 
@@ -8,22 +9,22 @@ const About = () => {
       name="about"
       className="w-full h-screen flex items-center bg-[#094a4a]"
     >
-      <div className="flex flex-col justify-center px-[10%] lg:pl-[30%] lg:pr-[10%] text-lg md:text-2xl text-[#b8bcbd]">
+      <div className="flex flex-col justify-center px-[10%] lg:pl-[30%] lg:pr-[10%] text-sm sm:text-lg md:text-2xl text-[#b8bcbd]">
         <h2
-          className="self-center md:self-end text-[#18c9c9] text-3xl sm:text-5xl pb-20 underline underline-offset-4"
+          className="self-center md:self-end text-[#18c9c9] text-3xl sm:text-5xl py-10 sm:pb-20 underline underline-offset-4"
           style={{
             textShadow: "1px 1px 1px #f2f2f2",
           }}
         >
           About me
         </h2>
-        <p className="pb-10">
+        <p className="pb-5 sm:pb-10">
           <span className="highlighted-text">Former chef</span>, my{" "}
           <strong className="highlighted-text">web applications</strong> are
           cooked with great care and attention to detail and crafted with{" "}
           <span className="highlighted-text">love and passion</span>.
         </p>
-        <p className="pb-10">
+        <p className="pb-5 sm:pb-10">
           Today, I dedicate all my energy to{" "}
           <strong className="highlighted-text">web development</strong>, mainly
           in the <strong className="highlighted-text">frontend</strong> but not
@@ -41,14 +42,19 @@ const About = () => {
           while keeping a constant eye on the{" "}
           <strong className="highlighted-text">latest technologies</strong> .
         </p>
-        <div>
+        <div className="flex justify-center mb-5 sm:mb-10">
           <a href={Resume} target="_blank" rel="noreferrer">
-            <button className="bg-[#094a4a] text-[#18c9c9] text-base md:text-lg border-[#18c9c9] hover:text-[#094a4a] hover:bg-[#18c9c9] hover:border-[#18c9c9] w-fit border-2 px-3 py-2 mb-10 rounded-md">
+            <button className="bg-[#094a4a] text-[#18c9c9] text-sm sm:text-base md:text-lg border-[#18c9c9] hover:text-[#094a4a] hover:bg-[#18c9c9] hover:border-[#18c9c9] w-fit border-2 px-3 py-2 mr-6 rounded-md">
               My resume
             </button>
           </a>
+          <a href={CV} target="_blank" rel="noreferrer">
+            <button className="bg-[#094a4a] text-[#18c9c9] text-sm sm:text-base md:text-lg border-[#18c9c9] hover:text-[#094a4a] hover:bg-[#18c9c9] hover:border-[#18c9c9] w-fit border-2 px-3 py-2 rounded-md">
+              Mon CV
+            </button>
+          </a>
         </div>
-        <div className="flex items-center">
+        <div className="flex justify-center items-center">
           <a
             href="https://www.github.com/MikHenaff"
             target="_blank"
