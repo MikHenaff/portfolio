@@ -26,7 +26,7 @@ const Home = () => {
           <p>
             I&apos;m{" "}
             <span className="highlighted-text">available for hire</span> and{" "}
-            <span className="highlighted-text">mobile</span>
+            <span className="highlighted-text">mobile</span>.
           </p>
         </div>
       </div>
