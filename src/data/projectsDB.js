@@ -6,6 +6,8 @@
 //import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
 //import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png";
 //import WeatherAppContent from "../assets/img/projects/weather-app-content.png";
+//import NutfluxHomepage from "../assets/img/projects/nutflux-homepage.png";
+//import NutfluxContent from "../assets/img/projects/nutflux-content.png";
 
 export const projectsDB = [
   {
@@ -13,7 +15,7 @@ export const projectsDB = [
     //img1src: {TraineeProjectHomepage},
     //img2src: { TraineeProjectContent },
     technos: ["- HTML/CSS", "- JavaScript", "- PHP", "- MySQL"],
-    desc: 'A movie application based on "The Movie Database" <a href="https://www.themoviedb.org" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(themoviedb.org)</a>.<br/>The user can create an account and collect information about the movies in their video library, stay updated on the latest, most popular films, or those coming soon to theaters, and search for information by movie title.',
+    desc: 'A movie application based on "The Movie Database" <a href="https://www.themoviedb.org" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(themoviedb.org)</a>.<br/>The users can create an account and collect information about the movies in their video library, stay updated on the latest, most popular films, or those coming soon to theaters, and search for information by movie title.',
     codeLink: "https://github.com/mikhenaff/MonCineClub",
   },
   {
@@ -28,15 +30,15 @@ export const projectsDB = [
   {
     name: "Kaamelott Quotes",
     //img1src: {KaamelottContent},
-    technos: ["- React", "- TypeScript", "- Tailwind CSS"],
-    desc: 'My first React application. Very simple, based on "Kaamelott" API <a href="https://kaamelott.chaudie.re" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(kaamelott.chaudie.re)</a>.<br/>The app allows the user to display a random character quote from the TV series Kaamelott, specifying the season and episode name from which it originates.',
-    demoLink: "https://mikhenaff.github.io/kaamelott-app-react-ts-tld",
-    codeLink: "https://github.com/mikhenaff/kaamelott-app-react-ts-tld",
+    technos: ["- React", "- Tailwind", "- Node", "- Express"],
+    desc: 'A very basic React app using Vite. A homemade simple node express server has been added to avoid CORS policy.The app is based on "Kaamelott" API <a href="https://kaamelott.chaudie.re" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(kaamelott.chaudie.re)</a>.<br/> and allows the user to display a random character quote from the TV series Kaamelott, specifying the season and episode name from which it originates.',
+    demoLink: "https://kaamelott-app-client.vercel.app",
+    codeLink: "https://github.com/mikhenaff/kaamelott-app",
   },
   {
     name: "Portfolio",
     //img1src: {PortfolioHomepage},
-    technos: ["- React", "- Tailwind CSS"],
+    technos: ["- React", "- Tailwind"],
     desc: '<span class="centered-text">This is the portfolio you are on right now !</span>',
     codeLink: "https://github.com/mikhenaff/portfolio",
   },
@@ -44,9 +46,18 @@ export const projectsDB = [
     name: "Weather App",
     //img1src: {WeatherAppHomepage},
     //img2src: {WeatherAppContent},
-    technos: ["- React", "- Tailwind CSS"],
+    technos: ["- React", "- Tailwind"],
     desc: 'A React wheather application designed as a mobile app and based on "OpenWeatherMap" APIs <a href="https://openweathermap.org" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(openweathermap.org)</a>.<br/>The app allows the user to search for a city and display the local date and time, the temperature, the weather description, the local sunrise and sunset times, the wind and the humidity. The backgroung image changes according to the weather and the time (day or night).',
     demoLink: "https://weather-app-react-mauve-three.vercel.app/",
     codeLink: "https://github.com/mikhenaff/weather-app-react",
+  },
+  {
+    name: "Nutflux",
+    //img1src: {NutfluxHomepage},
+    //img2src: {NutfluxContent},
+    technos: ["- React", "- Tailwind", "- Firebase"],
+    desc: '<span class="centered-text">In progress development...</span>',
+    demoLink: "",
+    codeLink: "https://github.com/mikhenaff/nutflux",
   },
 ];

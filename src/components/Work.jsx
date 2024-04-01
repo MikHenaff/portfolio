@@ -4,6 +4,7 @@ import CocktailTimeHomepage from "../assets/img/projects/cocktail-time-homepage.
 import KaamelottContent from "../assets/img/projects/kaamelott-content.png";
 import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
 import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png";
+import NutfluxHomepage from "../assets/img/projects/nutflux-homepage.png";
 
 const Work = ({ burger, handleProject, handleText }) => {
   return (
@@ -27,6 +28,18 @@ const Work = ({ burger, handleProject, handleText }) => {
           }
         >
           <ProjectCard
+            imgSrc={NutfluxHomepage}
+            text="Nutflux"
+            handleProject={handleProject}
+            handleText={handleText}
+          />
+          <ProjectCard
+            imgSrc={KaamelottContent}
+            text="Kaamelott Quotes"
+            handleProject={handleProject}
+            handleText={handleText}
+          />
+          <ProjectCard
             imgSrc={WeatherAppHomepage}
             text="Weather App"
             handleProject={handleProject}
@@ -35,12 +48,6 @@ const Work = ({ burger, handleProject, handleText }) => {
           <ProjectCard
             imgSrc={CocktailTimeHomepage}
             text="Cocktail Time"
-            handleProject={handleProject}
-            handleText={handleText}
-          />
-          <ProjectCard
-            imgSrc={KaamelottContent}
-            text="Kaamelott Quotes"
             handleProject={handleProject}
             handleText={handleText}
           />

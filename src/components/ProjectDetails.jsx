@@ -12,6 +12,8 @@ import PortfolioHomepage from "../assets/img/projects/portfolio-homepage.png";
 import PortfolioAbout from "../assets/img/projects/portfolio-about.png";
 import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png";
 import WeatherAppContent from "../assets/img/projects/weather-app-content.png";
+import NutfluxHomepage from "../assets/img/projects/nutflux-homepage.png";
+import NutfluxContent from "../assets/img/projects/nutflux-content.png";
 
 const ProjectDetails = ({ handleProject, text }) => {
   return (
@@ -51,6 +53,8 @@ const ProjectDetails = ({ handleProject, text }) => {
                       ? PortfolioHomepage
                       : project.name === "Weather App"
                       ? WeatherAppHomepage
+                      : project.name === "Nutflux"
+                      ? NutfluxHomepage
                       : ""
                   }
                   alt={`${project.name} app homepage`}
@@ -70,6 +74,8 @@ const ProjectDetails = ({ handleProject, text }) => {
                       ? PortfolioAbout
                       : project.name === "Weather App"
                       ? WeatherAppContent
+                      : project.name === "Nutflux"
+                      ? NutfluxContent
                       : ""
                   }
                   alt={`${project.name} app content`}
