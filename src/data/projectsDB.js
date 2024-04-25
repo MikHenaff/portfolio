@@ -56,8 +56,8 @@ export const projectsDB = [
     //img1src: {NutfluxHomepage},
     //img2src: {NutfluxContent},
     technos: ["- React", "- Tailwind", "- Firebase"],
-    desc: '<span class="centered-text">In progress development...</span>',
-    demoLink: "",
-    codeLink: "https://github.com/mikhenaff/nutflux",
+    desc: 'A Netflix clone built with "The Movie Database" <a href="https://www.themoviedb.org" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(themoviedb.org)</a> and using database and hosting from Firebase <a href="https://firebase.google.com/" rel="noreferrer" target="_blank" class="text-slate-200 underline hover:no-underline">(firebase.google.com)</a>.<br/>The app allows users to create an account, delete it or change their credentials.<br/>When users are logged in, they can see the detailed information about available movies or TV shows, watch the trailer if it exists and manage their list by adding or removing movies and TV shows.',
+    demoLink: "https://nutflux-react-tlwd-firebase.web.app",
+    codeLink: "https://github.com/mikhenaff/nutflux-app",
   },
 ];

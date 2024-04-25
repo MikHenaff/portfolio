@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { projectsDB } from "../data/projectsDB";
 import { FaTimes } from "react-icons/fa";
 import parse from "html-react-parser";
@@ -16,6 +17,10 @@ import NutfluxHomepage from "../assets/img/projects/nutflux-homepage.png";
 import NutfluxContent from "../assets/img/projects/nutflux-content.png";
 
 const ProjectDetails = ({ handleProject, text }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full min-h-screen flex items-center bg-[#094a4a] py-5">
       {projectsDB.map(
@@ -103,9 +108,7 @@ const ProjectDetails = ({ handleProject, text }) => {
                     Technos
                   </h3>
                   {project.technos.map((techno, idx) => (
-                    <p key={idx} className="">
-                      {techno}
-                    </p>
+                    <p key={idx}>{techno}</p>
                   ))}
                 </div>
               </div>
