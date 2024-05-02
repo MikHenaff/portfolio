@@ -14,9 +14,9 @@ const Home = () => {
         <div className="max-w-[700px] text-[#b8bcbd]">
           <p className="pb-4">
             <span className="highlighted-text">Passionate</span> about the world
-            of <strong className="highlighted-text">React</strong>, I&apos;m a
-            beginner determined to explore its environment and create amazing
-            user experiences.
+            of <strong className="highlighted-text">React</strong>, I&apos;m
+            determined to explore its environment and create amazing user
+            experiences.
           </p>
           <p className="pb-4">
             My portfolio reflects my learning journey, budding creativity, and

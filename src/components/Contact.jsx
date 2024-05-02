@@ -13,12 +13,18 @@ const Contact = () => {
         >
           Contact me
         </h2>
+        <div className="flex flex-col items-center pb-5">
+          <p className="mb-2 sm:mb-3">Send me an email...</p>
+          <a href="mailto:mikhenaff@yahoo.fr" title="mikhenaff@yahoo.fr">
+            <GoMail className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] text-[#18c9c9] hover:text-[#1df4f4]" />
+          </a>
+        </div>
         <form
           action="https://getform.io/f/0437ae29-34e4-48d0-ba4d-df3bf8437de0"
           method="POST"
           className="flex flex-col items-center w-full sm:w-[500px] text-[#041f1f]"
         >
-          <p className="mb-3 text-[#b8bcbd]">Send me a message...</p>
+          <p className="mb-3 text-[#b8bcbd]">... or send me a message !</p>
           <input
             type="text"
             name="name"
@@ -44,12 +50,6 @@ const Contact = () => {
             Send message
           </button>
         </form>
-        <div className="flex flex-col items-center pb-2">
-          <p className="mb-2 sm:mb-3">...or send me an email !</p>
-          <a href="mailto:mikhenaff@yahoo.fr" title="mikhenaff@yahoo.fr">
-            <GoMail className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] text-[#18c9c9] hover:text-[#1df4f4]" />
-          </a>
-        </div>
       </div>
     </div>
   );

@@ -19,28 +19,27 @@ const About = () => {
           About me
         </h2>
         <p className="pb-5 sm:pb-10">
-          <span className="highlighted-text">Former chef</span>, my{" "}
-          <strong className="highlighted-text">web applications</strong> are
-          cooked with great care and attention to detail and crafted with{" "}
-          <span className="highlighted-text">love and passion</span>.
+          <span className="highlighted-text">Former cook</span>, my web
+          applications are prepared with{" "}
+          <span className="highlighted-text">care</span> and{" "}
+          <span className="highlighted-text">attention to detail</span>, and
+          crafted with great{" "}
+          <span className="highlighted-text">liveliness</span>.
         </p>
         <p className="pb-5 sm:pb-10">
-          Today, I dedicate all my energy to{" "}
-          <strong className="highlighted-text">web development</strong>, mainly
-          in the <strong className="highlighted-text">frontend</strong> but not
+          <span className="highlighted-text">
+            In perpetual desire to acquire new knowledge
+          </span>
+          , I dedicate all my energy to web development, mainly in the{" "}
+          <strong className="highlighted-text">frontend</strong>, but not
           only...
         </p>
         <p className="pb-10">
-          Enthusiastic about{" "}
-          <strong className="highlighted-text">user experience</strong>, I
-          combine <strong className="highlighted-text">creativity</strong> and{" "}
-          <strong className="highlighted-text">technical skills</strong> to
-          design <strong className="highlighted-text">intuitive</strong>,{" "}
-          <strong className="highlighted-text">high-performing</strong>, and{" "}
-          <strong className="highlighted-text">accessible</strong>{" "}
-          <strong className="highlighted-text">front-end interfaces</strong>{" "}
-          while keeping a constant eye on the{" "}
-          <strong className="highlighted-text">latest technologies</strong> .
+          <span className="highlighted-text">Highly motivated</span> and{" "}
+          <span className="highlighted-text">resilient</span>, I achieve the
+          goals I set for myself, being{" "}
+          <span className="highlighted-text">involved</span> and{" "}
+          <span className="highlighted-text">always with a smile</span>.
         </p>
         <div className="flex justify-center mb-5 sm:mb-10">
           <a href={Resume} target="_blank" rel="noreferrer">

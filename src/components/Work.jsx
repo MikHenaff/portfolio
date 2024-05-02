@@ -64,6 +64,7 @@ const Work = ({ burger, handleProject, handleText }) => {
             handleText={handleText}
           />
         </div>
+        <p className="text-base text-[#18c9c9] font-bold mt-4">( ... )</p>
       </div>
     </div>
   );

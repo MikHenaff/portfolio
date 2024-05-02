@@ -30,7 +30,8 @@ const Skills = () => {
         </p>
         <p className="highlighted-text">Soft skills:</p>
         <p className="pb-4">
-          Motivation, team spirit, adaptability, problems solving, autonomy.
+          Motivation, team spirit, thirst for learning, adaptability, problems
+          solving, autonomy.
         </p>
         <p className="highlighted-text">Hard skills:</p>
         <p className="pb-7 sm:pb-10">
