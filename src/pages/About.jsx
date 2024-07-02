@@ -5,20 +5,17 @@ import Linkedin from "../assets/img/networks/linkedin.png";
 
 const About = () => {
   return (
-    <div
-      name="about"
-      className="w-full h-screen flex items-center bg-[#094a4a]"
-    >
-      <div className="flex flex-col justify-center px-[10%] lg:pl-[30%] lg:pr-[10%] text-sm sm:text-lg md:text-2xl text-[#b8bcbd]">
+    <div className="w-full h-screen flex items-center bg-[#094a4a]">
+      <div className="flex flex-col justify-center px-[10%]  text-sm sm:text-lg md:text-2xl text-[#b8bcbd]">
         <h2
-          className="self-center md:self-end text-[#18c9c9] text-3xl sm:text-5xl py-10 sm:pb-20 underline underline-offset-4"
+          className="self-center text-[#18c9c9] text-3xl sm:text-5xl py-10 sm:pb-20 underline underline-offset-4"
           style={{
             textShadow: "1px 1px 1px #f2f2f2",
           }}
         >
           About me
         </h2>
-        <p className="pb-5 sm:pb-10">
+        <p className="pb-5 sm:pb-10 text-center">
           <span className="highlighted-text">Former cook</span>, my web
           applications are prepared with{" "}
           <span className="highlighted-text">care</span> and{" "}
@@ -26,7 +23,7 @@ const About = () => {
           crafted with great{" "}
           <span className="highlighted-text">liveliness</span>.
         </p>
-        <p className="pb-5 sm:pb-10">
+        <p className="pb-5 sm:pb-10 text-center">
           <span className="highlighted-text">
             In perpetual desire to acquire new knowledge
           </span>
@@ -34,14 +31,14 @@ const About = () => {
           <strong className="highlighted-text">frontend</strong>, but not
           only...
         </p>
-        <p className="pb-10">
+        <p className="pb-10 text-center">
           <span className="highlighted-text">Highly motivated</span> and{" "}
           <span className="highlighted-text">resilient</span>, I achieve the
           goals I set for myself, being{" "}
           <span className="highlighted-text">involved</span> and{" "}
           <span className="highlighted-text">always with a smile</span>.
         </p>
-        <div className="flex justify-center mb-5 sm:mb-10">
+        <div className="flex justify-center pb-10">
           <a href={Resume} target="_blank" rel="noreferrer">
             <button className="bg-[#094a4a] text-[#18c9c9] text-sm sm:text-base md:text-lg border-[#18c9c9] hover:text-[#094a4a] hover:bg-[#18c9c9] hover:border-[#18c9c9] w-fit border-2 px-3 py-2 mr-6 rounded-md">
               My resume

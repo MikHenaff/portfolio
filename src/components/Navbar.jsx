@@ -1,14 +1,21 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import NavbarLink from "./NavbarLink";
 import NavbarBurgerLink from "./NavbarBurgerLink";
-import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
-const Navbar = ({ burger, handleBurger }) => {
+const Navbar = () => {
+  const [burger, setBurger] = useState(false);
+
+  const handleBurger = () => {
+    setBurger(!burger);
+  };
+
   return (
     <div className="fixed flex w-full items-center justify-between text-2xl px-5 py-3 text-[#18c9c9] bg-[#094a4a] z-10">
       <div>
-        <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+        <Link to="home" className="cursor-pointer">
           <p className="logo-text font-bold">&lt;MH/&gt;</p>
         </Link>
       </div>
@@ -23,7 +30,7 @@ const Navbar = ({ burger, handleBurger }) => {
         <span>|</span>
         <NavbarLink text="Contact" />
       </ul>
-      <div onClick={handleBurger} className="z-10 md:hidden">
+      <div onClick={handleBurger} className="z-10 md:hidden cursor-pointer">
         {burger ? <FaTimes /> : <FaBars />}
       </div>
       <ul

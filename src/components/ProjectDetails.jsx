@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { projectsDB } from "../data/projectsDB";
 import { FaTimes } from "react-icons/fa";
 import parse from "html-react-parser";
@@ -15,14 +14,11 @@ import WeatherAppHomepage from "../assets/img/projects/weather-app-homepage.png"
 import WeatherAppContent from "../assets/img/projects/weather-app-content.png";
 import NutfluxHomepage from "../assets/img/projects/nutflux-homepage.png";
 import NutfluxContent from "../assets/img/projects/nutflux-content.png";
+import { Link } from "react-router-dom";
 
-const ProjectDetails = ({ handleProject, text }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+const ProjectDetails = ({ text }) => {
   return (
-    <div className="w-full min-h-screen flex items-center bg-[#094a4a] py-5">
+    <div className="w-full min-h-screen flex items-center bg-[#094a4a] pb-5 pt-16">
       {projectsDB.map(
         (project) =>
           project.name === text && (
@@ -30,14 +26,9 @@ const ProjectDetails = ({ handleProject, text }) => {
               key={project.name}
               className="relative flex flex-col justify-center items-center w-4/5 mx-auto bg-[#139f9f] border rounded py-5 px-2"
             >
-              <a href="#work">
-                <button
-                  onClick={handleProject}
-                  className="absolute top-2 right-2"
-                >
-                  <FaTimes className="text-white bg-red-500 w-6 h-6 rounded" />
-                </button>
-              </a>
+              <Link to="../../work" className="absolute top-2 right-2">
+                <FaTimes className="text-white bg-red-500 w-6 h-6 rounded" />
+              </Link>
               <h2
                 className="text-2xl md:text-3xl text-center font-bold underline underline-offset-2 py-5 text-[#094a4a]"
                 style={{ textShadow: "1px 1px 1px #f2f2f2" }}
@@ -46,7 +37,6 @@ const ProjectDetails = ({ handleProject, text }) => {
               </h2>
               <div className="flex flex-col lg:flex-row p-2 mb-2 shadow-md">
                 <img
-                  //src={project.img1src}
                   src={
                     project.name === "Trainee Project"
                       ? TraineeProjectHomepage
@@ -65,9 +55,7 @@ const ProjectDetails = ({ handleProject, text }) => {
                   alt={`${project.name} app homepage`}
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2 lg:mr-2"
                 />
-                {/*{project.img2src && (*/}
                 <img
-                  //src={projet.img2src}
                   src={
                     project.name === "Trainee Project"
                       ? TraineeProjectContent
@@ -86,7 +74,6 @@ const ProjectDetails = ({ handleProject, text }) => {
                   alt={`${project.name} app content`}
                   className="w-[200px] sm:w-[300px] xl:w-[400px] h-auto pb-2"
                 />
-                {/*)}*/}
               </div>
               <div className="flex flex-col justify-center items-center mb-5">
                 <div className="pb-2">
